@@ -26,7 +26,7 @@ class Solution {
         let size = String(n).length
      
         // 1 is Not a prime number
-        if(n === 1) return false
+        if(n <= 1) return false
 
         while(count < size && n > 1){
             for(let i=2; i<Math.sqrt(n); i++){
@@ -48,3 +48,18 @@ class Solution {
 
 const a = new Solution
 console.log(a.solve(n))
+
+
+
+//Helper function 
+function isPrime(n){
+    if(n <= 1 ) return false
+    
+    let min = Math.min(n, 10)
+    for(i=2; i<min; i++){
+        if(n % i === 0){
+            return false
+        }
+    }
+    return true
+}
