@@ -40,3 +40,4 @@ class Solution {
 
 const a = new Solution
 console.log(a.solve(num))
+
