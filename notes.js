@@ -1,6 +1,27 @@
 
+let arr = "(){}{]"
 
+function balance(arr){
+    let hashMap = {
+        ")" : "(",
+        "}" : "{",
+        "]" : "["
+    }
 
+    let openArr = []
+
+    for(let i=0; i<arr.length; i++){
+        let current = arr[i]
+        if("{[(".includes(current)){
+            openArr.push(current)
+        }else if(openArr.pop() !== hashMap[current]){
+            return false
+        }
+    }
+
+    return openArr.length === 0
+}
+console.log(balance(arr))
 
 
 // class Solution {
