@@ -29,8 +29,7 @@ class Solution {
             let first = nums.indexOf(parseInt(key))
             let last = nums.lastIndexOf(parseInt(key))
             let subNums = nums.slice(first,last+1)
-            let subFreq = frequent(subNums)
-            let submax = maxCounter(subFreq)
+            let submax = freq[key]
             if(submax === max){
                 if(subNums.length < shortestLength){
                     shortestLength = subNums.length
