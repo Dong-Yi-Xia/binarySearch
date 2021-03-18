@@ -1,17 +1,17 @@
-Linked List Deletion
-Given a singly linked list node, and an integer target, return the same linked list with all 
-nodes whose value is target removed.
+// Linked List Deletion
+// Given a singly linked list node, and an integer target, return the same linked list with all 
+// nodes whose value is target removed.
 
-Constraints
+// Constraints
 
-n ≤ 100,000 where n is the number of nodes in node
-Example 1
-Input
-Visualize
-node = 0 1 1 2
-target = 1
+// n ≤ 100,000 where n is the number of nodes in node
+// Example 1
+// Input
+// Visualize
+// node = 0 1 1 2
+// target = 1
 
-Output = 0 2
+// Output = 0 2
 
 
 /**
